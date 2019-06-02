@@ -1,0 +1,47 @@
+>>> To get input in string using "char" then use this :
+    //char str[256];
+    //cin.get(str,256);cin.get();
+    here cin.get(); is used to take input even we have pressed enter.
+    Important point is that it wont store in the bufer of cin.
+
+
+    string str;
+
+>>> To get input in string using "string" then use this :
+    getline(cin,str);
+
+>>> To get the string size <<
+
+    1. str.size();
+    2. str.length();
+    3. strlen(str.c_str());
+    4.      int i = 0; 
+            while (str[i] != '\0') 
+            { 
+                ++i; 
+            } 
+            cout << i << endl;
+
+    5.      for (i=0; str[i]!='\0'; i++) 
+            { 
+            } 
+            cout << i << endl; 
+
+>>> To get out of a switch statement
+    1. exit(0)
+    2. exit (1)
+    3. return 0
+    4. return 1
+    5. return (0)
+    6. return (1)
+
+>>> To delete a character from last
+    cout << '\b' << " ";  // it actually moves your cursor to no. of times you have written \b then it will replace it with " " , whitespace
+
+>>> Writing return 0, sometimes takes time.
+
+>>> Fast I/O in case of huge input and output, write these two lines
+    ios_base::sync_with_stdio(false); 
+    cin.tie(NULL);
+
+>>>

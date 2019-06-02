@@ -1,0 +1,22 @@
+install vscode
+install git
+install mingw
+open vscode
+	click ctrl+shift+p
+	go to user setting , there will be a bracket, write this line inside :
+		"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+	save it, restart vscode
+now go to environment variables and go to SYSTEM VARIABLES and search for path
+click on new path and write this :
+		C:\MinGW\bin
+and finally gcc will work in both modes, powershell and bash too.
+
+for toggle setting...
+
+go to preferencs > set AUTOSAVE to "focus".
+
+go to keyboard mapping > go to keybindings.json and add these lines...
+
+// Toggle between terminal and editor focus
+{ "key": "ctrl+`", "command": "workbench.action.terminal.focus"},
+{ "key": "ctrl+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"}
